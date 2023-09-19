@@ -1,5 +1,4 @@
 import prompt
-name = ''
 
 
 def welcome_user():

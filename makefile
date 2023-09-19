@@ -11,4 +11,6 @@ package-install:
 	python3 -m pip install --user dist/*.whl
 
 brain-games: 
-	poetry run brain-games
+	poetry run brain-even
+	poetry run brain-calc
+	
