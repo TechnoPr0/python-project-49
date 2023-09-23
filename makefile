@@ -13,4 +13,5 @@ package-install:
 brain-games: 
 	poetry run brain-even
 	poetry run brain-calc
+	poetry run brain-gcd
 	

@@ -7,14 +7,13 @@ from brain_games.games.engine import check_answer
 
 def brain_calc():
     hello()
-    user_name = welcome_user()
+    user_name = welcome_user("What is the result of the expression?")
     signs = ['+', '-', '*']
     count_answer = 0
     while count_answer < 3:
         first_num, second_num = randint(1, 100), randint(1, 100)
         rand_sign = choice(signs)
-        print("What is the result of the expression?")
-        print(f"{first_num} {rand_sign} {second_num}")
+        print(f"Question: {first_num} {rand_sign} {second_num}")
         match rand_sign:
             case '+':
                 correct_answer = first_num + second_num
