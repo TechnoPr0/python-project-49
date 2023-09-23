@@ -1,3 +1,17 @@
+import prompt
+
+
+def welcome_user(hint):
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!")
+    print(hint)
+    return name
+
+
+def hello():
+    print("Welcome to the Brain Games!")
+
+
 def check_answer(correct_answer, count_correct_answer, user_name):
     user_answer = input('Your answer: ').lower()
     if str(correct_answer) == user_answer:
