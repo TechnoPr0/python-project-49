@@ -24,7 +24,7 @@ def progression():
         correct_answer = list_numb[rand_index]
         list_numb[rand_index] = '..'
         list_print = ' '.join(list_numb)
-        print(f"Questions: {list_print}")
+        print(f"Question: {list_print}")
         count_answer = check_answer(correct_answer, count_answer, user_name)
         if count_answer < 0:
             break
