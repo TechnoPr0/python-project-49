@@ -7,9 +7,9 @@ def progression():
     user_name = welcome_user("What number is missing in the progression?")
     count_answer = 0
     while count_answer < 3:
-        rand_len = randint(5, 20)
-        rand_index = randint(0, rand_len)
-        rand_progressive = randint(2, 100)
+        rand_len = 8 #randint(5, 20)
+        rand_index = randint(0, rand_len - 1)
+        rand_progressive = randint(2, 30)
         rand_start = randint(1, 100)
         list_numb = []
 
