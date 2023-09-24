@@ -10,8 +10,9 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
+package-uninstall:
+	python3 -m pip uninstall hexlet-code
+
 brain-games: 
-	poetry run brain-even
-	poetry run brain-calc
-	poetry run brain-gcd
+	brain-games
 	

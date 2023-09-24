@@ -1,10 +1,11 @@
 import prompt
 
 
-def welcome_user(hint):
+def welcome_user(hint = None):
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    print(hint)
+    if hint != None:
+        print(hint)
     return name
 
 
