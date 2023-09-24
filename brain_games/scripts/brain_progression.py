@@ -15,15 +15,16 @@ def progression():
 
         for i in range(0, rand_len):
             if i == 0:
-                list_numb.append(rand_start)
+                list_numb.append(str(rand_start))
                 next_numb = rand_start
             else:
                 next_numb += rand_progressive
-                list_numb.append(next_numb)
+                list_numb.append(str(next_numb))
         
         correct_answer = list_numb[rand_index]
         list_numb[rand_index] = '..'
-        print(f"Questions: {list_numb}")
+        list_print = ' '.join(list_numb)
+        print(f"Questions: {list_print}")
         count_answer = check_answer(correct_answer, count_answer, user_name)
         if count_answer < 0:
             break
