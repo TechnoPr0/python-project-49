@@ -15,8 +15,8 @@ def prime():
             if rand_num % i == 0:
                 correct_answer = 'no'
         print(f"Question: {rand_num}")
-        count_correct_answer = check_answer(correct_answer, 
-                                            count_correct_answer, 
+        count_correct_answer = check_answer(correct_answer,
+                                            count_correct_answer,
                                             user_name)
         if count_correct_answer < 0:
             break
