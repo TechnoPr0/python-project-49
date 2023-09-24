@@ -2,9 +2,11 @@
 from random import randint
 from brain_games.games.engine import check_answer, welcome_user, hello
 
-def gcd():
+
+def brain_gcd():
     hello()
-    user_name = welcome_user("Find the greatest common divisor of given numbers.")
+    user_name = welcome_user("""Find the greatest common 
+                             divisor of given numbers.""")
     count_answer = 0
     while count_answer < 3:
         rand_num_1 = randint(1, 100)
@@ -26,8 +28,9 @@ def gcd():
     if count_answer == 3:
         print(f"Congratulations, {user_name}!")
 
+
 def main():
-    gcd()
+    brain_gcd()
 
 
 if __name__ == '__main__':

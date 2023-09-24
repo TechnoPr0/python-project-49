@@ -2,12 +2,13 @@
 from random import randint
 from brain_games.games.engine import check_answer, welcome_user, hello
 
+
 def progression():
     hello()
     user_name = welcome_user("What number is missing in the progression?")
     count_answer = 0
     while count_answer < 3:
-        rand_len = 8 #randint(5, 20)
+        rand_len = 8  #randint(5, 20)
         rand_index = randint(0, rand_len - 1)
         rand_progressive = randint(2, 30)
         rand_start = randint(1, 100)
@@ -20,7 +21,6 @@ def progression():
             else:
                 next_numb += rand_progressive
                 list_numb.append(str(next_numb))
-        
         correct_answer = list_numb[rand_index]
         list_numb[rand_index] = '..'
         list_print = ' '.join(list_numb)

@@ -5,7 +5,8 @@ from brain_games.games.engine import check_answer, welcome_user, hello
 
 def even():
     hello()
-    user_name = welcome_user('Answer "yes" if the number is even, otherwise answer "no".')
+    user_name = welcome_user('''Answer "yes" if the number is even, 
+                             otherwise answer "no".''')
     count_answer = 0
     while count_answer < 3:
         random_number = randint(1, 100)
