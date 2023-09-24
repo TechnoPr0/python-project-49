@@ -5,8 +5,8 @@ from brain_games.games.engine import check_answer, welcome_user, hello
 
 def brain_gcd():
     hello()
-    user_name = welcome_user("Find the greatest common "\ 
-                             "divisor of given numbers.")
+    text = "Find the greatest common divisor of given numbers."
+    user_name = welcome_user(text)
     count_answer = 0
     while count_answer < 3:
         rand_num_1 = randint(1, 100)
